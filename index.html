@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,7 +23,14 @@
   <main class="calc-container">
     <div class="header">
       <div class="logo">calc</div>
-      <div class="theme">THEME 1 2 3</div>
+      <span class="theme-text">THEME</span>
+      <div class="theme-selector">1&nbsp;&nbsp;2&nbsp;&nbsp;3
+        <label class="switch">
+          <input type="radio" name="toggle" class="button" id="theme-one"></input>
+          <input type="radio" name="toggle" class="button" id="theme-two"></input>
+          <input type="radio" name="toggle" class="button" id="theme-three"></input>
+        </label>
+      </div>
     </div>
     <div class="screen"></div>
     <div class="keypad">
